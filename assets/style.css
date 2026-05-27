@@ -11,42 +11,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 6rem;
-    height: 80px;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-}
-
-.brand img {
-    height: 200px;
-    padding-top: 30px;
-    width: auto;
-    display: block;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links a {
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+.nav-link-pers {
+    font-family: "Poppins", sans-serif;
     color: #609df5;
     text-decoration: none;
-    position: relative;
-    padding-bottom: 2px;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 p {
@@ -66,12 +36,12 @@ main {
     align-items: center;
 }
 
-.container {
+.containerTitolo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
-    margin-left: 4rem;
+    margin-left: 1rem;
 }
 
 .title-hero {
@@ -79,8 +49,7 @@ main {
     font-size: 65px;
     line-height: 1.05;
     color: #609df5;
-    margin: 0 0 4px;
-    line-height: 1.3;
+    margin: 0;
     align-self: flex-start;
 }
 
@@ -102,9 +71,9 @@ main {
     margin: 10px;
 }
 
-.container p {
+.containerTitolo p {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: bold;
     color: #888;
     margin: 0;
     line-height: 1.6;
@@ -131,7 +100,7 @@ main {
     gap: 1rem;
 }
 
-.text h2 {
+h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 1.25;
@@ -164,7 +133,18 @@ main {
 }
 
 .btn:hover {
-    background: #333;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 10px 20px;
+    background: #fff78a;
+    color: #609df5;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.2s;
 }
 
 .image-wrap {
@@ -190,6 +170,10 @@ main {
     font-weight: 800;
     color: #609df5;
     letter-spacing: -0.03em;
+}
+
+.footer-element {
+    color: #609df5;
 }
 
 .cards-grid {

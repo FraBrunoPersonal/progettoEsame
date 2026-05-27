@@ -6,28 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-<nav>
-  <a class="brand" href="#">
-    <img src="assets/logo.png" alt="Logo del brand" />
-  </a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand py-0" href="#">
+        <img src="assets/logo.png" alt="Logo del brand" height="200" />
+      </a>
 
-  <ul class="nav-links">
-    <li><a href="#" class="active">Chi siamo</a></li>
-    <li><a href="#">Prodotti</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">Contatti</a></li>
-  </ul>
-</nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="image-div">
-    <img src="assets/immagine_prodotto.png" alt="Porta il sole dentro di te." class="image" />
-  </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-link-pers mx-2" aria-current="page" href="#">Chi siamo</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-pers mx-2" href="#">Prodotti</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-pers mx-2" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-pers mx-2" href="#">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <div class="container">
+  <img src="assets/immagine_prodotto.png" alt="Porta il sole dentro di te." class="rounded img-fluid px-3" />
+
+
+  <div class="containerTitolo">
     <h1 class="title-hero">Porta il sole dentro di te.</h1>
     <p>
       Uno spray progettato per riequilibrare il tuo meteo interiore.
@@ -35,9 +47,9 @@
   </div>
 
 
-  <main>
-    <section class="section">
-      <div class="text">
+  <section class="container py-4 py-md-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-6 text-center text-md-start">
         <h2>Per chi sente troppo</h2>
         <p>
           Fuori non sempre le giornate sono grigie.
@@ -49,323 +61,275 @@
         </p>
         <a class="btn" href="#">Scopri di più</a>
       </div>
-      <div class="image-wrap">
-        <img src="assets/immagine_insight.jpg" alt="Per chi sente troppo" />
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+        <img src="assets/immagine_insight.jpg" alt="Per chi sente troppo" class="img-fluid rounded w-100 w-md-75"
+          style="max-width: 400px; aspect-ratio: 1; object-fit: cover; border: 3px solid #609df5;" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section reverse">
-      <div class="text">
-        <h2>Progettato per il tuo
-          meteo interiore</h2>
+  <section class="container py-4 py-md-5">
+    <div class="row align-items-center g-4 flex-md-row-reverse">
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <h2>Progettato per il tuo meteo interiore</h2>
         <p>
           Sunshine è uno spray emozionale progettato per stimolare benessere immediato attraverso Formula S-17 e
-          tecnologia NeuroScent.
-          Agendo attraverso l’olfatto, il senso più direttamente collegato a memoria ed emozioni, Sunshine crea una
-          sensazione di calma, comfort e leggerezza emotiva.
+          tecnologia NeuroScent. Agendo attraverso l'olfatto, il senso più direttamente collegato a memoria ed emozioni,
+          Sunshine crea una sensazione di calma, comfort e leggerezza emotiva.
         </p>
-        <a class="btn" href="#">Scopri di più</a>
+        <a class="btn btn-primary" href="#">Scopri di più</a>
       </div>
-      <div class="image-wrap">
-        <img src="assets/immagine_descrizione_prodotto.png" alt="Progettato per il tuo
-          meteo interiore" />
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+        <img src="assets/immagine_descrizione_prodotto.png" alt="Progettato per il tuo meteo interiore"
+          class="img-fluid rounded w-100"
+          style="max-width: 400px; aspect-ratio: 1; object-fit: cover; border: 3px solid #609df5;" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container-cards">
-        <h2 class="section-title">Tre elementi essenziali</h2>
+  <section class="container py-5">
+    <div class="container-cards">
+      <h2 class="section-title">Tre elementi essenziali</h2>
 
-        <div class="cards-grid">
-          <article class="info-card">
-            <div class="card-image">
-              <img src="assets/immagine_s-17_elementi.jpg" alt="Formula S-17">
-            </div>
+      <div class="cards-grid">
+        <article class="info-card">
+          <div class="card-image">
+            <img src="assets/immagine_s-17_elementi.jpg" alt="Formula S-17">
+          </div>
 
-            <div class="card-content">
-              <h3>Formula S-17</h3>
-              <p>
-                Una formula neuro-olfattiva basata su un ricerca neuro-sensoriale
-                progettata per riequilibrare il tuo meteo interiore.
-              </p>
-              <a href="#" class="card-link">Scopri di più <span>→</span></a>
+          <div class="card-content">
+            <h3>Formula S-17</h3>
+            <p>
+              Una formula neuro-olfattiva basata su un ricerca neuro-sensoriale
+              progettata per riequilibrare il tuo meteo interiore.
+            </p>
+            <a href="#" class="card-link">Scopri di più <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-image">
+            <img src="assets/neuroscineza_elemento.png" alt="Tecnologia NeuroScent">
+          </div>
+
+          <div class="card-content">
+            <h3>Tecnologia NeuroScent</h3>
+            <p>
+              Stimola memoria sensoriale, comfort emotivo e percezioni positive
+              attraverso il respiro.
+            </p>
+            <a href="#" class="card-link">Scopri di più <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-image">
+            <img src="assets/atmosfera_elemento.jpg" alt="Reset atmosferico">
+          </div>
+
+          <div class="card-content">
+            <h3>Reset atmosferico</h3>
+            <p>
+              Trasforma le giornate emotivamente grigie in una sensazione di
+              leggerezza, calma e luce.
+            </p>
+            <a href="#" class="card-link">Scopri di più <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="percezioni-section">
+    <div class="percezioni-wrap">
+      <header class="percezioni-head">
+        <h2 class="percezioni-title">Percezioni</h2>
+        <p class="percezioni-subtitle">
+          Le parole di chi ha provato Sunshine
+        </p>
+      </header>
+
+      <div class="percezioni-slider">
+        <div class="percezioni-track">
+          <article class="percezioni-card">
+            <p class="percezioni-quote">
+              Non cambia quello che succede.<br>
+              Cambia il modo in cui lo affronto.
+            </p>
+
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--peach">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Giulia Moretti</strong>
+                <span class="percezioni-role">32 anni, insegnante</span>
+              </div>
             </div>
           </article>
 
-          <article class="info-card">
-            <div class="card-image">
-              <img src="assets/neuroscineza_elemento.png" alt="Tecnologia NeuroScent">
-            </div>
+          <article class="percezioni-card">
+            <p class="percezioni-quote">
+              È come aprire la finestra dopo<br>
+              giorni di aria pesante.
+            </p>
 
-            <div class="card-content">
-              <h3>Tecnologia NeuroScent</h3>
-              <p>
-                Stimola memoria sensoriale, comfort emotivo e percezioni positive
-                attraverso il respiro.
-              </p>
-              <a href="#" class="card-link">Scopri di più <span>→</span></a>
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--blue">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Marta Belloni</strong>
+                <span class="percezioni-role">23 anni, graphic designer</span>
+              </div>
             </div>
           </article>
 
-          <article class="info-card">
-            <div class="card-image">
-              <img src="assets/atmosfera_elemento.jpg" alt="Reset atmosferico">
-            </div>
+          <article class="percezioni-card">
+            <p class="percezioni-quote">
+              Dopo averlo usato, la giornata<br>
+              sembra davvero avere un altro<br>
+              clima.
+            </p>
 
-            <div class="card-content">
-              <h3>Reset atmosferico</h3>
-              <p>
-                Trasforma le giornate emotivamente grigie in una sensazione di
-                leggerezza, calma e luce.
-              </p>
-              <a href="#" class="card-link">Scopri di più <span>→</span></a>
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--green">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Davide Leone</strong>
+                <span class="percezioni-role">18 anni, studente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
+            <p class=" percezioni-quote">
+              Non cambia quello che succede.<br>
+              Cambia il modo in cui lo affronto.
+            </p>
+
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--peach">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Giulia Moretti</strong>
+                <span class="percezioni-role">32 anni, insegnante</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
+            <p class="percezioni-quote">
+              È come aprire la finestra dopo<br>
+              giorni di aria pesante.
+            </p>
+
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--blue">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Marta Belloni</strong>
+                <span class="percezioni-role">23 anni, graphic designer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
+            <p class="percezioni-quote">
+              Dopo averlo usato, la giornata<br>
+              sembra davvero avere un altro<br>
+              clima.
+            </p>
+
+            <div class="percezioni-user">
+              <div class="percezioni-avatar percezioni-avatar--green">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="7.5"></circle>
+                  <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
+                  <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
+                </svg>
+              </div>
+              <div class="percezioni-meta">
+                <strong class="percezioni-name">Davide Leone</strong>
+                <span class="percezioni-role">18 anni, studente</span>
+              </div>
             </div>
           </article>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="percezioni-section">
-      <div class="percezioni-wrap">
-        <header class="percezioni-head">
-          <h2 class="percezioni-title">Percezioni</h2>
-          <p class="percezioni-subtitle">
-            Le parole di chi ha provato Sunshine
-          </p>
-        </header>
+  <section class="container py-5">
+    <h1 class="blockquote">
+      <b>
+        Il sole non può seguirti ovunque. Sunshine sì.
+        Scopri Sunshine e porta con te una nuova
+        atmosfera emotiva.
+      </b>
+    </h1>
+  </section>
 
-        <div class="percezioni-slider">
-          <div class="percezioni-track">
-            <article class="percezioni-card">
-              <p class="percezioni-quote">
-                Non cambia quello che succede.<br>
-                Cambia il modo in cui lo affronto.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--peach">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Giulia Moretti</strong>
-                  <span class="percezioni-role">32 anni, insegnante</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="percezioni-card">
-              <p class="percezioni-quote">
-                È come aprire la finestra dopo<br>
-                giorni di aria pesante.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--blue">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Marta Belloni</strong>
-                  <span class="percezioni-role">23 anni, graphic designer</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="percezioni-card">
-              <p class="percezioni-quote">
-                Dopo averlo usato, la giornata<br>
-                sembra davvero avere un altro<br>
-                clima.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--green">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Davide Leone</strong>
-                  <span class="percezioni-role">18 anni, studente</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
-              <p class=" percezioni-quote">
-                Non cambia quello che succede.<br>
-                Cambia il modo in cui lo affronto.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--peach">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Giulia Moretti</strong>
-                  <span class="percezioni-role">32 anni, insegnante</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
-              <p class="percezioni-quote">
-                È come aprire la finestra dopo<br>
-                giorni di aria pesante.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--blue">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Marta Belloni</strong>
-                  <span class="percezioni-role">23 anni, graphic designer</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="percezioni-card percezioni-card--clone" aria-hidden="true">
-              <p class="percezioni-quote">
-                Dopo averlo usato, la giornata<br>
-                sembra davvero avere un altro<br>
-                clima.
-              </p>
-
-              <div class="percezioni-user">
-                <div class="percezioni-avatar percezioni-avatar--green">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="7.5"></circle>
-                    <path d="M9.2 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M14.8 10.2a.8.8 0 1 0 0 .01"></path>
-                    <path d="M9.4 14.2c.8.9 1.6 1.3 2.6 1.3s1.9-.4 2.6-1.3"></path>
-                  </svg>
-                </div>
-                <div class="percezioni-meta">
-                  <strong class="percezioni-name">Davide Leone</strong>
-                  <span class="percezioni-role">18 anni, studente</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h1 class="blockquote">
-        <b>
-          Il sole non può seguirti ovunque. Sunshine sì.
-          Scopri Sunshine e porta con te una nuova
-          atmosfera emotiva.
-        </b>
-      </h1>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div class="site-footer__divider"></div>
-
-      <div class="site-footer__grid">
-        <div class="site-footer__brand-area">
-          <a href="#" class="site-footer__brand">SunShine</a>
-
-          <div class="site-footer__socials">
-            <a href="#" class="site-footer__social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                <circle cx="12" cy="12" r="4.2"></circle>
-                <circle cx="17.2" cy="6.8" r="1"></circle>
-              </svg>
-            </a>
-
-            <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="3"></rect>
-                <path d="M8 10v7"></path>
-                <path d="M8 7.5a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1"></path>
-                <path d="M12 17v-4.1c0-1.2.9-2.1 2.1-2.1s1.9.8 1.9 2.2V17"></path>
-                <path d="M12 10v1"></path>
-              </svg>
-            </a>
-
-            <a href="#" class="site-footer__social-link" aria-label="X">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4.5 4.5l15 15"></path>
-                <path d="M19.5 4.5l-15 15"></path>
-              </svg>
-            </a>
+  <footer class="container-fluid py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 d-flex flex-column gap-2">
+          <a href="#" class="navbar-brand p-0">
+            <img src="assets/logo.png" alt="Sunshine" height="60" />
+          </a>
+          <div class="d-flex gap-3">
+            <a href="#" class="fs-5 footer-element"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 footer-element"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="fs-5 footer-element"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
 
-        <div class="site-footer__links">
-          <div class="site-footer__column">
-            <h3 class="site-footer__title">Chi siamo</h3>
-            <ul class="site-footer__list">
-              <li><a href="#">Core features</a></li>
-              <li><a href="#">Pro experience</a></li>
-              <li><a href="#">Integrations</a></li>
-            </ul>
-          </div>
-
-          <div class="site-footer__column">
-            <h3 class="site-footer__title">Prodotti</h3>
-            <ul class="site-footer__list">
-              <li><a href="#">Core features</a></li>
-              <li><a href="#">Pro experience</a></li>
-              <li><a href="#">Integrations</a></li>
-            </ul>
-          </div>
-
-          <div class="site-footer__column">
-            <h3 class="site-footer__title">Shop</h3>
-            <ul class="site-footer__list">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Case studies</a></li>
-              <li><a href="#">Customer stories</a></li>
-              <li><a href="#">Best practices</a></li>
-            </ul>
-          </div>
-
-          <div class="site-footer__column">
-            <h3 class="site-footer__title">Contatti</h3>
-            <ul class="site-footer__list">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Legal</a></li>
-            </ul>
-          </div>
+        <div class="col-12 col-md-6 d-flex justify-content-md-end gap-4 mt-3 mt-md-0">
+          <a href="#" class="text-decoration-none fw-semibold footer-element">Chi siamo</a>
+          <a href="#" class="text-decoration-none fw-semibold footer-element">Prodotti</a>
+          <a href="#" class="text-decoration-none fw-semibold footer-element">Shop</a>
+          <a href="#" class="text-decoration-none fw-semibold footer-element">Contatti</a>
         </div>
+
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
