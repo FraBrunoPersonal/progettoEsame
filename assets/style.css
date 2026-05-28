@@ -19,6 +19,11 @@ body {
     font-weight: 500;
 }
 
+.nav-link-pers:hover {
+    color: #609df5;
+    opacity: 0.70;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -69,7 +74,6 @@ h2 {
     border: 3px solid #609df5;
 }
 
-/* NOTA: .btn sovrascrive Bootstrap — vedi commento in fondo */
 .btn-sunshine {
     font-family: "Poppins", sans-serif;
     display: inline-block;
@@ -167,7 +171,12 @@ h2 {
 }
 
 .card-link:hover {
-    opacity: 0.85;
+    /* opacity: 0.85; */
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    opacity: 0.70;
 }
 
 .container-cards {
