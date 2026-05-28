@@ -134,13 +134,13 @@ h2 {
 }
 
 .card-content {
-    padding: 28px 26px 24px;
+    padding: 15px 15px;
 }
 
 .card-content h3 {
     font-family: "Poppins", sans-serif;
     margin: 0 0 18px;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.2;
     font-weight: 800;
     color: #609df5;
@@ -174,34 +174,20 @@ h2 {
     margin: 0 auto;
 }
 
-.percezioni-section {
-    width: 90%;
-    padding: 72px 20px 88px;
-    background: #ffffff;
-}
-
-.percezioni-wrap {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.percezioni-head {
-    text-align: center;
-    margin-bottom: 54px;
-}
-
 .percezioni-title {
     font-family: "Poppins", sans-serif;
     margin: 0;
-    color: #609df5;
+    text-align: center;
     font-size: 50px;
     line-height: 1.05;
     font-weight: 800;
+    color: #609df5;
     letter-spacing: -0.03em;
 }
 
 .percezioni-subtitle {
-    margin: 22px 0 0;
+    margin: 0 0 56px;
+    font-family: "Poppins", sans-serif;
     color: #66666d;
     font-size: 35px;
     line-height: 1.10;
@@ -226,9 +212,8 @@ h2 {
 }
 
 .percezioni-card {
-    width: 372px;
     min-height: 280px;
-    padding: 36px 34px 30px;
+    padding: 36px 30px;
     border: 1px solid #e9e9ef;
     border-radius: 20px;
     background: #ffffff;
