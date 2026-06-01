@@ -1,3 +1,34 @@
+/* 
+ - box-sizing : include padding e bordo nel calcolo delle dimensioni
+ - margin / padding : spazio esterno e interno agli elementi
+ - width / max-width / height / min-height : dimensioni degli elementi
+ - overflow : gestisce il contenuto che supera i limiti del contenitore
+ - aspect-ratio : mantiene un rapporto fisso tra larghezza e altezza
+ - display: flex : abilita il layout flessibile
+ - flex-direction : orienta gli elementi (riga o colonna)
+ - align-items / align-self : allineamento sull'asse secondario
+ - justify-content : distribuzione sull'asse principale
+ - gap : spazio tra gli elementi flex
+ - flex : scorciatoia per grow, shrink e basis
+ - font-family : tipo di carattere
+ - font-size : dimensione del testo
+ - font-weight : spessore del testo (grassetto, normale…)
+ - line-height : altezza della riga
+ - letter-spacing : spaziatura tra lettere
+ - text-align : allineamento orizzontale del testo
+ - text-decoration : sottolineature e decorazioni
+ - color : colore del testo
+ - background / background-color : colore o immagine di sfondo
+ - border : bordo completo (spessore, stile, colore)
+ - border-radius : arrotondamento degli angoli
+ - box-shadow : ombra esterna all'elemento
+ - object-fit : come un'immagine si adatta al suo contenitore
+ - transition : anima il passaggio tra due stati
+ - opacity : trasparenza dell'elemento
+ - cursor : aspetto del cursore
+ - display : modalità di visualizzazione
+*/
+
 *,
 *::before,
 *::after {
@@ -32,7 +63,7 @@ p {
     line-height: 1.8;
 }
 
-.containerTitolo {
+.container-titolo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +80,7 @@ p {
     align-self: flex-start;
 }
 
-.containerTitolo p {
+.container-titolo p {
     font-size: 30px;
     font-weight: bold;
     color: #888;
@@ -66,7 +97,6 @@ h2 {
     font-size: 35px;
 }
 
-/* Classe estratta dagli stili inline delle immagini nelle sezioni */
 .section-img {
     max-width: 400px;
     aspect-ratio: 1;
@@ -108,12 +138,6 @@ h2 {
 
 .footer-element {
     color: #609df5;
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
 }
 
 .info-card {
@@ -171,16 +195,11 @@ h2 {
 }
 
 .card-link:hover {
-    /* opacity: 0.85; */
     text-decoration: underline;
 }
 
 .footer-link:hover {
     opacity: 0.70;
-}
-
-.container-cards {
-    margin: 0 auto;
 }
 
 .percezioni-title {
@@ -202,22 +221,6 @@ h2 {
     line-height: 1.10;
     font-weight: 700;
     letter-spacing: -0.03em;
-}
-
-.percezioni-slider {
-    overflow: hidden;
-    padding: 8px 4px 18px;
-}
-
-.percezioni-track {
-    display: flex;
-    gap: 22px;
-    width: max-content;
-    animation: percezioni-marquee 24s linear infinite;
-}
-
-.percezioni-slider:hover .percezioni-track {
-    animation-play-state: paused;
 }
 
 .percezioni-card {
